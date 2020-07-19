@@ -12,4 +12,23 @@
         <url-pattern>/hello</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>AboutMeServlet</servlet-name>
+        <servlet-class>com.sda.AboutMeServlet</servlet-class>
+        <load-on-startup>2</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AboutMeServlet</servlet-name>
+        <url-pattern>/about</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ProgrammingLanguageDashboardServlet</servlet-name>
+        <servlet-class>com.sda.ProgrammingLanguageDashboardServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProgrammingLanguageDashboardServlet</servlet-name>
+        <url-pattern>/programming</url-pattern>
+    </servlet-mapping>
+
 </web-app>
