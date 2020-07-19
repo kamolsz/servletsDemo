@@ -3,11 +3,18 @@ package com.sda;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+
+@WebServlet(
+        name = "ProgrammingLanguageDashboardServlet",
+        urlPatterns = {"/programming", "/Programming"},
+        loadOnStartup = 1
+)
 
 public class ProgrammingLanguageDashboardServlet extends HttpServlet {
 
@@ -36,7 +43,7 @@ public class ProgrammingLanguageDashboardServlet extends HttpServlet {
 
         writer.println("<body>");
 ///, style="float:center", style = "border: 2px solid black"
-        writer.println(" <table >");
+        writer.println(" <table border =\"1\">");
         writer.println("<tr>");
         writer.println("<th>Programming language</th> <th>Application</th> <th>difficulty</th>");
         writer.println("</tr>");
