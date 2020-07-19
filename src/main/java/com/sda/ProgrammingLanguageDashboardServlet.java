@@ -1,6 +1,7 @@
 package com.sda;
 
 import org.apache.log4j.Logger;
+import services.AddProgrammingServices;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -57,6 +58,8 @@ public class ProgrammingLanguageDashboardServlet extends HttpServlet {
         writer.println("</body>");
         writer.println("</html>");
 
-
+        AddProgrammingServices.viewWholeListOfProgrammingLanguages();
     }
+
+
 }
